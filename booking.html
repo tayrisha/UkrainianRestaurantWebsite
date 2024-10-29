@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Ukrainian Harvest House booking page</title>
+  <link rel="stylesheet" href="./CSS/restaurant.css">
+  <meta name="description"
+    content="This website is a learning project for the Computer Science course,focusing on a fictional Ukrainian dishes restaurant in Dublin.">
+  <meta name="keywords" content="restaurant, Ukrainian dishes, food, Dublin, Ireland">
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="./Pictures/logo.ico">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+
+<body>
+  <div class="top_picrure">
+    <h1 class="title">Booking</h1>
+    <ul class="navigation_bar">
+      <li style="display: inline">
+        <a href="./index.html">Home</a>
+      </li>
+      <li style="display: inline">
+        <a href="./menu.html">Menu</a>
+      </li>
+      <li style="display: inline">
+        <a href="./contact.html">Contact</a>
+      </li>
+      <li style="display: inline">
+        <a href="./booking.html"> Booking</a>
+      </li>
+      <li style="display: inline">
+        <a href="./gallery.html"> Gallery</a>
+      </li>
+    </ul>
+  </div>
+  <main>
+    <div class="contact_info">
+      <p> Thank you for considering Ukrainian Harvest House for your dining experience.
+        We're located in the heart of Dublin,
+        bringing the vibrant flavors of Ukraine to the center of this bustling city.</p>
+      <h3>Phone</h3>
+      <p> For reservations or inquiries, please call us at +353 1 234 5678 or fill out the form.</p>
+
+      <form class="submit_form" onsubmit="showMessage()">
+        <h3> Booking form</h3>
+
+        <div class="form_group">
+          <label for="user_first_name">Your first name</label>
+          <input maxlength="15" name="user_first_name" type="text" id="user_first_name" required>
+
+        </div>
+
+        <div class="form_group">
+          <label for="user_last_name">Your second name</label>
+          <input maxlength="15" name="user_last_name" type="text" id="user_last_name" required>
+        </div>
+
+        <div class="form_group">
+          <label for="user_phone">Your phone number</label>
+          <input maxlength="13" name="user_phone" type="text" pattern="[0-9]+" id="user_phone"
+            placeholder="Enter only digits" required>
+        </div>
+
+        <div class="form_group">
+          <label for="booking_date">Preferred booking date</label>
+          <input name="booking_date" type="date" id="booking_date" required>
+        </div>
+
+        <button type="submit">Submit</button>
+        <script>
+          function showMessage() {
+            // Display a pop-up message
+            alert("Form submitted successfully! Note: this is a learning project, this restaurant does not exist. ");
+          }
+        </script>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <p>Author: Tetiana Tsiuriupa<br>
+      <a href="mailto:tayri2022@gmail.com">tayri2022@gmail.com</a>
+      This restaurant does not exist.
+      This website is a learning project for the Computer Science course at Dundrum College of Further Education in
+      Dublin, Ireland.
+      All photos are taken from Unsplash and are used under license. All rights reserved.
+    </p>
+  </footer>
+</body>
+
+</html>

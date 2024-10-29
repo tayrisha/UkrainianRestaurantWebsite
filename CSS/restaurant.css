@@ -1,0 +1,231 @@
+html {
+  box-sizing: border-box;
+}
+
+.main_picture>.title {
+  font-family: "Garamond", serif;
+  font-size: 4.5rem;
+  margin: 10px;
+  text-align: center;
+  color: #ffffff;
+  word-wrap: break-word;
+  text-shadow: 3px 3px rgb(98, 33, 0);
+}
+
+.top_picrure>.title {
+  font-family: "Garamond", serif;
+  font-size: 4.5rem;
+  margin: 10px;
+  text-align: center;
+  color: #69472d;
+  word-wrap: break-word;
+  text-shadow: 3px 3px rgb(190, 160, 145);
+}
+
+ul.navigation_bar {
+  text-align: center;
+  background-color: #f8f4f1;
+  padding: 10px;
+}
+
+ul.navigation_bar>li {
+  display: inline-block;
+  padding: 10px 16px;
+}
+
+ul.navigation_bar>li:hover {
+  background-color: #ffffff;
+}
+
+ul.navigation_bar>li>a {
+  color: #996515;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+div.main_picture {
+  background-image: url("../Pictures/Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 600px;
+  opacity: 0.85;
+
+
+
+}
+
+.main_text {
+  font-family: "Garamond", serif;
+  font-size: 1.25rem;
+  margin: 10px;
+  text-align: center;
+  color: #063413;
+  margin: 24px;
+  word-wrap: break-word;
+
+}
+
+body {
+  background-color: #eae3dda0;
+}
+
+.top_picrure {
+  background-image: url("../Pictures/TopPicture.jpg");
+  width: 100%;
+  height: 220px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+
+.main_text {
+  font-family: "Garamond", serif;
+  font-size: 1.125m;
+  margin: 10px;
+  text-align: center;
+  color: #243f2d;
+  word-wrap: break-word;
+}
+
+
+footer>p {
+  text-align: center;
+  font-family: "Garamond", serif;
+  font-size: 0.625rem;
+  color: #243f2d;
+  word-wrap: break-word;
+
+}
+
+.menu {
+  text-align: center;
+  padding: 0.4px;
+  height: 50%;
+  width: 60%;
+  background-color: #ffffff;
+  margin: 0.4px auto;
+  border-radius: 3%;
+}
+
+.menu>h3 {
+  margin: 0.2px;
+  border-bottom: #694e25 solid 1.5px;
+  font-family: "Brush Script MT", cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  word-wrap: break-word;
+  color: rgba(34, 54, 42, 0.991)3;
+}
+
+.menu>h4 {
+  font-family: "Garamond", serif;
+  font-size: 1.5rem;
+  text-align: center;
+  word-wrap: break-word;
+  color: #274a35;
+}
+
+.menu>p {
+  text-align: center;
+  font-family: "Garamond", serif;
+  font-size: 1rem;
+  color: #000000;
+  word-wrap: break-word;
+}
+
+.menu>h5 {
+  font-family: "Garamond", serif;
+  font-size: 1.875rem;
+  text-align: center;
+  word-wrap: break-word;
+  color: #415d4cc0;
+  margin: 0.5%;
+}
+
+.contact_info {
+  font-family: "Garamond", serif;
+  font-size: 1.125m;
+  margin: 10px;
+  text-align: center;
+  color: #243f2d;
+  word-wrap: break-word;
+  border: #ffffff solid 2px;
+}
+
+.gallery_row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.gallery_column {
+  flex: 0 0 calc(50% - 10px);
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.gallery_column img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .gallery_column {
+    flex: 0 0 100%;
+  }
+}
+
+.submit_form {
+  color: #5e4827;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  margin: 5%;
+}
+
+.submit_form>h3 {
+  color: #3a2b14;
+  text-align: center;
+  font-family: "Garamond", serif;
+  font-size: 2rem;
+}
+
+.submit_form>button {
+  color: #996515;
+  text-align: center;
+  font-family: "Garamond", serif;
+  font-size: 1.5rem;
+  background-color: #e4d3c7;
+  border-radius: 20%;
+  border: none;
+  width: 100px;
+  height: 50px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.form_group {
+  margin: 5px;
+  padding: 5px;
+  font-family: "Garamond", serif;
+  font-size: 1.5rem;
+  color: #302815;
+  word-wrap: break-word;
+  text-shadow: 2px 2px rgb(228, 210, 201);
+}
+
+.form_group>input {
+  border-radius: 10%;
+  width: 20%;
+  height: 7%;
+  border: #efd7c6;
+
+}
